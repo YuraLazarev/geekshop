@@ -8,4 +8,4 @@ def products(request):
     return render(request, 'products.html')
 
 def contacts(request):
-    return render(request, 'contacts.html')
+    return render(request, 'contact.html')
