@@ -2,10 +2,30 @@ from django.shortcuts import render
 
 # Create your views here.
 def main(request):
-    return render(request, 'index.html')
+    value = {
+        'title': 'Главная',
+        'content_class': 'slider'
+    }
+    return render(request, 'index.html', value)
 
 def products(request):
-    return render(request, 'products.html')
+    value = {
+        'title': 'Каталог',
+        'content_class': 'hero-white'
+    }
+    return render(request, 'products.html', value)
 
 def contacts(request):
-    return render(request, 'contact.html')
+    value = {
+        'title': 'Контакты',
+
+        'content_class': 'hero'
+    }
+    return render(request, 'contact.html', value)
+
+def test(request):
+    value = {
+        'title' : 'HORROR',
+        'content_class' : 'hero'
+    }
+    return render(request, 'test.html', value)
