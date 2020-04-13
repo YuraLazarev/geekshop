@@ -266,6 +266,10 @@ html, body {
 	width: 270px;
 	position: relative;
 }
+.tab-content .block .prod{
+width:100%;
+height:auto;
+}
 .tab-content a .text {
 	display: none;
 	height: 268px;
